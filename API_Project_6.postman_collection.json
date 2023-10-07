@@ -1,0 +1,698 @@
+{
+	"info": {
+		"_postman_id": "9fbdfde4-68dd-441e-a70a-d94e2563ac5a",
+		"name": "API_Project_6",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29962217"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get list",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ernopro09.pythonanywhere.com/api/user/",
+							"protocol": "https",
+							"host": [
+								"ernopro09",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "Test",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "55555",
+									"type": "text"
+								},
+								{
+									"key": "bio",
+									"value": "I'm second admin",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://ernopro09.pythonanywhere.com/api/user/",
+							"protocol": "https",
+							"host": [
+								"ernopro09",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get detail",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ernopro09.pythonanywhere.com/api/user/1",
+							"protocol": "https",
+							"host": [
+								"ernopro09",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "Admin_2",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								},
+								{
+									"key": "bio",
+									"value": "I'm second admin",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://ernopro09.pythonanywhere.com/api/user/2/",
+							"protocol": "https",
+							"host": [
+								"ernopro09",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"2",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://ernopro09.pythonanywhere.com/api/user/2/",
+							"protocol": "https",
+							"host": [
+								"ernopro09",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"2",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Project",
+			"item": [
+				{
+					"name": "Get list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ernopro09.pythonanywhere.com/api/project/",
+							"protocol": "https",
+							"host": [
+								"ernopro09",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"project",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Website Project",
+									"type": "text"
+								},
+								{
+									"key": "start_date",
+									"value": "2023-10-06",
+									"type": "text"
+								},
+								{
+									"key": "owner",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "members",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://ernopro09.pythonanywhere.com/api/project/",
+							"protocol": "https",
+							"host": [
+								"ernopro09",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"project",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ernopro09.pythonanywhere.com/api/project/1/",
+							"protocol": "https",
+							"host": [
+								"ernopro09",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"project",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "WEB",
+									"type": "text"
+								},
+								{
+									"key": "start_date",
+									"value": "2023-10-07",
+									"type": "text"
+								},
+								{
+									"key": "owner",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "members",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://ernopro09.pythonanywhere.com/api/project/3/",
+							"protocol": "https",
+							"host": [
+								"ernopro09",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"project",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://ernopro09.pythonanywhere.com/api/project/3/",
+							"protocol": "https",
+							"host": [
+								"ernopro09",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"project",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Task",
+			"item": [
+				{
+					"name": "Get list",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ernopro09.pythonanywhere.com/api/task/",
+							"protocol": "https",
+							"host": [
+								"ernopro09",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"task",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Website",
+									"type": "text"
+								},
+								{
+									"key": "deadline_date",
+									"value": "2023-10-07",
+									"type": "text"
+								},
+								{
+									"key": "project",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "assigned_to",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://ernopro09.pythonanywhere.com/api/task/",
+							"protocol": "https",
+							"host": [
+								"ernopro09",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"task",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get detail",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://ernopro09.pythonanywhere.com/api/task/3/",
+							"protocol": "https",
+							"host": [
+								"ernopro09",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"task",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "WEB",
+									"type": "text"
+								},
+								{
+									"key": "deadline_date",
+									"value": "2023-10-07",
+									"type": "text"
+								},
+								{
+									"key": "project",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "assigned_to",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://ernopro09.pythonanywhere.com/api/task/3/",
+							"protocol": "https",
+							"host": [
+								"ernopro09",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"task",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://ernopro09.pythonanywhere.com/api/task/3/",
+							"protocol": "https",
+							"host": [
+								"ernopro09",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"api",
+								"task",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
